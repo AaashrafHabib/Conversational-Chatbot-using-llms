@@ -8,3 +8,4 @@ sentence_transformers
 faiss_cpu
 streamlit 
 InstructorEmbedding
+streamlit_chat
