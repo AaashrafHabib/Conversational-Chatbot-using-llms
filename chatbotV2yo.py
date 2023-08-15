@@ -7,7 +7,12 @@ from langchain.llms import CTransformers
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
+from langchain.embeddings import HuggingFaceInstructEmbeddings
 
+import os
+os.environ['HUGGINGFACEHUB_API_TOKEN']='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'
+from langchain import HuggingFaceHub
+from langchain import PromptTemplate, LLMChain
 #load the pdf files from the path
 from langchain.document_loaders import PyPDFLoader
 
@@ -19,8 +24,8 @@ text_splitter  = RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)
 text_chunks = text_splitter.split_documents(documents)
 
 #create embeddings
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2",
-                                   model_kwargs={'device':"cpu"})
+embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-xl",
+                                                      model_kwargs={"device": "cpu"})
 
 #vectorstore
 vector_store = FAISS.from_documents(text_chunks,embeddings)
