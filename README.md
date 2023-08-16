@@ -1,16 +1,15 @@
 open chatbotV2yo.py 
 #create a virtual environment :(goal of virtual environment Isolation of Dependencies)
-
-new terminal in vs code , choose cmd 
+1)new terminal in vs code , choose cmd 
 then write 
-1) python -m venv myenv
-2) cd myenv
-3) cd Scripts
-4) activate
-
+ 1) python -m venv myenv
+ 2) cd myenv
+ 3) cd Scripts
+ 4) activate
+ 
     now you're in the virtual environment you sould download the requirements
    using either
-   1) adding the requirement.txt to the folder
+   1) adding the requirement.txt (you can find this file in the github repository )  to the folder
       then in terminal in vscode :
       1)pip install -r requirement.txt
    if it's not working you sould download every package seperatly
