@@ -1,5 +1,6 @@
 open chatbotV2yo.py 
-#create a virtual environment :(Isolation of Dependencies) 
+#create a virtual environment :(goal of virtual environment Isolation of Dependencies)
+
 new terminal in vs code , choose cmd 
 then write 
 1) python -m venv myenv
