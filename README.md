@@ -1,5 +1,5 @@
 open chatbotV2yo.py 
-#create a virtual environment 
+#create a virtual environment :
 new terminal in vs code , choose cmd 
 then write 
 1) python -m venv myenv
@@ -31,6 +31,8 @@ then write
   #you add the spring-boot documentation.pdf from the github repository and you adjust the path in line 19 
 
   #in terminal vscode (cmd) you write this line 
-  1)streamlit run chatbotV2yo.py 
+        1)streamlit run chatbotV2yo.py 
   it will give you a link localhost....... 
+
+  
   if every requirement is downloaded , it will work hopefully 
