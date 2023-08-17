@@ -12,7 +12,7 @@ then write
    1) adding the requirement.txt (you can find this file in the github repository )  to the folder
       then in terminal in vscode :
       1)pip install -r requirement.txt
-   if it's not working you sould download every package seperatly
+   if it's not working you should download every package seperatly
        1) pip install langchain
        2) pip install InstructorEmbedding
        3)  pip install sentence_transformers
@@ -25,7 +25,7 @@ then write
        10)  pip install bitsandbytes
        11)  pip install pypdf
      
-  #now you should download the llm fiel (.bin) from huggingFace using this link https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main 
+  #now you should download the llm file (.bin) from huggingFace using this link https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main 
   you choose from Files and versions (llama-2-7b-chat.ggmlv3.q4_0.bin) size: 3.79gb 
   then you add the .bin file to  the same folder you're working on 
   #you add the spring-boot documentation.pdf from the github repository and you adjust the path in line 19 
